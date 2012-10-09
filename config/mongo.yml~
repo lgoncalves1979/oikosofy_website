@@ -1,0 +1,22 @@
+defaults: &defaults
+  host: alex.mongohq.com
+  port: 10035
+
+development:
+  <<: *defaults
+  database: oikosofy_website_dev
+  username: oikosofy
+  password: oikosofy
+
+test:
+  <<: *defaults
+  database: oikosofy_website_dev
+  username: oikosofy
+  password: oikosofy
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  database: oikosofy_website_dev
+  username: oikosofy
+  password: oikosofy
